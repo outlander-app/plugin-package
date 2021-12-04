@@ -1,1 +1,3 @@
-# plugin-package
+# Outlander
+
+A description of this package.
