@@ -18,8 +18,8 @@ public protocol OPlugin {
 
 @objc open class Plugin: NSObject, OPlugin {
     open var name: String = ""
-    
-    public override init() {
+
+    public required override init() {
         super.init()
     }
 
