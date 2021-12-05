@@ -17,23 +17,23 @@ public protocol OPlugin {
 }
 
 @objc open class Plugin: NSObject, OPlugin {
-    public var name: String = ""
+    open var name: String = ""
 
-    public func initialize(host: IHost) {
+    open func initialize(host: IHost) {
     }
 
-    public func variableChanged(variable: String, value: String) {
+    open func variableChanged(variable: String, value: String) {
     }
-    
-    public func parse(input: String) -> String {
+
+    open func parse(input: String) -> String {
         return input
     }
-    
-    public func parse(xml: String) -> String {
+
+    open func parse(xml: String) -> String {
         return xml
     }
-    
-    public func parse(text: String) -> String {
+
+    open func parse(text: String) -> String {
         return text
     }
 }
