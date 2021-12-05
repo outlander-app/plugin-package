@@ -16,7 +16,7 @@ public protocol OPlugin {
     func parse(text: String) -> String
 }
 
-@objc public class Plugin: NSObject, OPlugin {
+@objc open class Plugin: NSObject, OPlugin {
     public var name: String = ""
 
     public func initialize(host: IHost) {
