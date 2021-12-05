@@ -15,6 +15,7 @@ public protocol IHost {
 }
 
 public protocol OPlugin {
+    init()
     var name: String { get }
     func initialize(host: IHost)
     func variableChanged(variable: String, value: String)
