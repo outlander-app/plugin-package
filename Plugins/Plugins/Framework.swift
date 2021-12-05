@@ -1,4 +1,11 @@
-import Cocoa
+//
+//  Framework.swift
+//  Plugins
+//
+//  Created by Joe McBride on 12/4/21.
+//
+
+import Foundation
 
 public protocol IHost {
     func send(text: String)
@@ -16,11 +23,10 @@ public protocol OPlugin {
     func parse(text: String) -> String
 }
 
-@objc open class Plugin: NSObject, OPlugin {
+open class Plugin: OPlugin {
     open var name: String = ""
 
-    public required override init() {
-        super.init()
+    public required init() {
     }
 
     open func initialize(host: IHost) {
