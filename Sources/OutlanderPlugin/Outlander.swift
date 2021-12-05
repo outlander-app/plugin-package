@@ -18,6 +18,10 @@ public protocol OPlugin {
 
 @objc open class Plugin: NSObject, OPlugin {
     open var name: String = ""
+    
+    public override init() {
+        super.init()
+    }
 
     open func initialize(host: IHost) {
     }
