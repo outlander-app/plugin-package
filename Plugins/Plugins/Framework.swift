@@ -21,13 +21,14 @@ public protocol OPlugin {
     func variableChanged(variable: String, value: String)
     func parse(input: String) -> String
     func parse(xml: String) -> String
-    func parse(text: String) -> String
+    func parse(text: String, window: String) -> String
 }
 
-open class Plugin: OPlugin {
+@objc open class Plugin: NSObject, OPlugin {
     open var name: String = ""
 
-    public required init() {
+    public required override init() {
+        super.init()
     }
 
     open func initialize(host: IHost) {
@@ -44,7 +45,7 @@ open class Plugin: OPlugin {
         return xml
     }
 
-    open func parse(text: String) -> String {
+    open func parse(text: String, window: String) -> String {
         return text
     }
 }
