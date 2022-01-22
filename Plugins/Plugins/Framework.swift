@@ -12,6 +12,9 @@ public protocol IHost {
     func get(variable: String) -> String
     func set(variable: String, value: String)
     func get(preset: String) -> String?
+    func write(content: String, to: URL)
+    func append(content: String, to: URL)
+    func load(from: URL) ->  String
 }
 
 public protocol OPlugin {
