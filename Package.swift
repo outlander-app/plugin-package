@@ -18,8 +18,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Plugins",
-            url: "https://github.com/outlander-app/plugin-package/releases/download/v1.0.4/Plugins.xcframework.zip",
-            checksum: "870393a0bb839b8a1c1264883e25c0870427baff5611d8270fe1601e90dae073"
+            url: "https://github.com/outlander-app/plugin-package/releases/download/v1.0.5/Plugins.xcframework.zip",
+            checksum: "2c8a347436caa4d1dfd0dcde373a2d1fb6425c9d7b324390db6423b628a174e8"
         )
     ]
 )
